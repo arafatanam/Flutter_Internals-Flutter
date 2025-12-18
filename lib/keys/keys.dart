@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_internals/keys/todo_item.dart';
 
 class Todo {
@@ -21,18 +20,9 @@ class Keys extends StatefulWidget {
 class _KeysState extends State<Keys> {
   var _order = 'asc';
   final _todos = [
-    const Todo(
-      'Learn Flutter',
-      Priority.urgent,
-    ),
-    const Todo(
-      'Practice Flutter',
-      Priority.normal,
-    ),
-    const Todo(
-      'Explore other courses',
-      Priority.low,
-    ),
+    const Todo('Learn Flutter', Priority.urgent),
+    const Todo('Practice Flutter', Priority.normal),
+    const Todo('Explore other courses', Priority.low),
   ];
 
   List<Todo> get _orderedTodos {
@@ -69,10 +59,7 @@ class _KeysState extends State<Keys> {
             children: [
               // for (final todo in _orderedTodos) TodoItem(todo.text, todo.priority),
               for (final todo in _orderedTodos)
-                TodoItem(
-                  todo.text,
-                  todo.priority,
-                ),
+                TodoItem(todo.text, todo.priority),
             ],
           ),
         ),
