@@ -19,7 +19,7 @@ class UIUpdatesDemo extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 18),
             Text(
               'Do you understand how Flutter updates UIs?',
               textAlign: TextAlign.center,
